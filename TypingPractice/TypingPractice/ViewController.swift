@@ -8,18 +8,44 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var tpTextField: UITextField!
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Set textfield as first responder after view loads
+        tpTextField.becomeFirstResponder()
+        
     }
+    
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
+
+    
+//MARK: - Textfield Delegate
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        //Resign first responder
+        tpTextField.resignFirstResponder()
+        
+        return true
     }
-
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        //user finished editing
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        return true
+    }
 
 }
+
 

@@ -9,15 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
-
-    @IBOutlet weak var praticeTextField: UITextField!
     
+    let emojiPhrases = [
+        "💰🚫🌳" : "Money doesn’t grow on trees.",
+        "❌⏰🐣":"Don’t count your chickens before they hatch.",
+        "📞📅":"Call it a day",
+        "▶️🔥":"Play with fire.",
+       "👫🚤": "We’re all in the same boat",
+       "❌🏠": "There’s no place like home.",
+       "✋🐴": "Hold your horses.",
+       "🙈🙉🙊": "See no evil; hear no evil; speak no evil."]
+
+    @IBOutlet weak var practiceTextField: UITextField!
     @IBOutlet weak var practiceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.practiceTextField.delegate = self
     }
     
 //MARK: - Textfield Delegate
@@ -34,9 +48,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
+        
+       //does change make sense?
+        
+        
+        
+        let text = textField.text! as  NSString
+        
+        let wholeText = text.stringByReplacingCharactersInRange(range, withString: string)
+        
+        
+        
+     
+        //return false to dissalow change
+        
+//        print(textField.text)
+//        
+//        //check input of textfield against practice label
+//        print(range)
+//        print(string)
+        
         return true
     }
+    
 
 }
+
 
 

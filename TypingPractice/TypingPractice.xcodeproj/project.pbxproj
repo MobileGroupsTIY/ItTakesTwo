@@ -53,6 +53,7 @@
 		E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PracticeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		E6F2C3931BE7AF59003A54DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F2C3A11BE7F7D2003A54DB /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../../../../../../Desktop/MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 				A91931501BE7ACDC009423E0 /* AppDelegate.swift */,
 				A91931521BE7ACDC009423E0 /* ViewController.swift */,
 				A91931541BE7ACDC009423E0 /* Main.storyboard */,
+				E6F2C3A11BE7F7D2003A54DB /* MyPlayground.playground */,
 				A91931571BE7ACDC009423E0 /* Assets.xcassets */,
 				A91931591BE7ACDC009423E0 /* LaunchScreen.storyboard */,
 				A919315C1BE7ACDC009423E0 /* Info.plist */,

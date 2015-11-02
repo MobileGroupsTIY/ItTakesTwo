@@ -8,6 +8,28 @@
 
 import UIKit
 
+protocol EmojiRepresentable {
+    func toEmoji(phrase: Phrase) -> [Character]
+}
+struct Phrase: EmojiRepresentable {
+    
+    var allEmoji = ["💰", "🌳", "🚫"]
+    var words = [String]()
+     func wordToEmoji(s: String) -> Bool {
+        if allEmoji.contains(s) { return true } else {
+            return false
+        }
+    }
+}
+
+
+//    func toEmoji(phrase: Phrase) -> [Character] {
+//        words.filter{ self.wordToEmoji($0) }
+//    }
+    
+
+
+
 class KeyboardViewController: UIInputViewController {
 
     @IBAction func touchedEmoji(button: UIButton) {
@@ -15,10 +37,15 @@ class KeyboardViewController: UIInputViewController {
         guard let text = button.titleLabel?.text else { return }
         
         switch text {
-            
-        case "🙊" :
-            
-            textDocumentProxy.insertText("Monkey")
+        case "💰": textDocumentProxy.insertText("Money doesn’t grow on trees.")
+        case "🚫", "🌳" : textDocumentProxy.insertText("Money doesn’t grow on trees.")
+        case "❌⏰🐣": textDocumentProxy.insertText("Don’t count your chickens before they hatch.")
+        case "📞📅": textDocumentProxy.insertText( "Call it a day")
+        case  "▶️🔥":textDocumentProxy.insertText("Play with fire.")
+        case  "👫🚤": textDocumentProxy.insertText("We’re all in the same boat")
+        case "❌🏠": textDocumentProxy.insertText("There’s no place like home.")
+        case "✋🐴": textDocumentProxy.insertText("Hold your horses.")
+        case "🙈🙉🙊": textDocumentProxy.insertText( "See no evil; hear no evil; speak no evil.")
             
         default : print("Blah")
             

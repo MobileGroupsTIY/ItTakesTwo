@@ -12,6 +12,7 @@
 		A91931561BE7ACDC009423E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91931541BE7ACDC009423E0 /* Main.storyboard */; };
 		A91931581BE7ACDC009423E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91931571BE7ACDC009423E0 /* Assets.xcassets */; };
 		A919315B1BE7ACDC009423E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91931591BE7ACDC009423E0 /* LaunchScreen.storyboard */; };
+		A91931731BE7C2AB009423E0 /* Keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91931721BE7C2AB009423E0 /* Keyboard.storyboard */; };
 		E6F2C3921BE7AF59003A54DB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */; };
 		E6F2C3961BE7AF59003A54DB /* PracticeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		A91931571BE7ACDC009423E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A919315A1BE7ACDC009423E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A919315C1BE7ACDC009423E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91931721BE7C2AB009423E0 /* Keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Keyboard.storyboard; sourceTree = "<group>"; };
 		E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PracticeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		E6F2C3931BE7AF59003A54DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */,
 				E6F2C3931BE7AF59003A54DB /* Info.plist */,
+				A91931721BE7C2AB009423E0 /* Keyboard.storyboard */,
 			);
 			path = PracticeKeyboard;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91931731BE7C2AB009423E0 /* Keyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +416,7 @@
 				E6F2C3981BE7AF59003A54DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

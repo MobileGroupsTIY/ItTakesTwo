@@ -10,6 +10,24 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
+    @IBAction func touchedEmoji(button: UIButton) {
+        
+        guard let text = button.titleLabel?.text else { return }
+        
+        switch text {
+            
+        case "🙊" :
+            
+            textDocumentProxy.insertText("Monkey")
+            
+        default : print("Blah")
+            
+        }
+        
+        
+    }
+    
+    
     @IBOutlet var nextKeyboardButton: UIButton!
 
     override func updateViewConstraints() {
@@ -35,11 +53,13 @@ class KeyboardViewController: UIInputViewController {
         let nextKeyboardButtonLeftSideConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Left, relatedBy: .Equal, toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0.0)
         let nextKeyboardButtonBottomConstraint = NSLayoutConstraint(item: self.nextKeyboardButton, attribute: .Bottom, relatedBy: .Equal, toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
         self.view.addConstraints([nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint])
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated
+        
     }
 
     override func textWillChange(textInput: UITextInput?) {
@@ -57,6 +77,7 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
         self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+    
     }
 
 }

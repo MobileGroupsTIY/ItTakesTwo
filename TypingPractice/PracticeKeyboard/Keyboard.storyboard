@@ -26,6 +26,9 @@
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="🙊"/>
+                                        <connections>
+                                            <action selector="touchedEmoji:" destination="JCK-8p-y0J" eventType="touchUpInside" id="aiS-NG-UMd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-1K-ecW">
                                         <rect key="frame" x="120" y="0.0" width="120" height="60"/>

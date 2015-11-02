@@ -24,15 +24,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsE-uP-MHV">
+                                <rect key="frame" x="20" y="67" width="560" height="41"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Ur5-Z4-adS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="b7x-aJ-n19" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1Di-97-ETG"/>
+                            <constraint firstItem="OsE-uP-MHV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N6v-Ei-7hb"/>
+                            <constraint firstItem="OsE-uP-MHV" firstAttribute="top" secondItem="b7x-aJ-n19" secondAttribute="bottom" constant="17" id="PEz-M1-YZ4"/>
                             <constraint firstItem="b7x-aJ-n19" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jli-c2-6x2"/>
                             <constraint firstItem="b7x-aJ-n19" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kOQ-nD-RdB"/>
+                            <constraint firstItem="OsE-uP-MHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nkk-or-PMM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="practiceLabel" destination="OsE-uP-MHV" id="kpj-ta-lsD"/>
+                        <outlet property="praticeTextField" destination="b7x-aJ-n19" id="2Vs-gg-EHk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

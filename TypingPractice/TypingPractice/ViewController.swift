@@ -40,3 +40,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
 }
 
 
+let sv = UIStackView()
+

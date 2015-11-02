@@ -14,6 +14,7 @@
 		A919315B1BE7ACDC009423E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91931591BE7ACDC009423E0 /* LaunchScreen.storyboard */; };
 		E6F2C3921BE7AF59003A54DB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */; };
 		E6F2C3961BE7AF59003A54DB /* PracticeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6F2C39C1BE7C14A003A54DB /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2C39B1BE7C14A003A54DB /* KeyboardButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PracticeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		E6F2C3931BE7AF59003A54DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F2C39B1BE7C14A003A54DB /* KeyboardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */,
+				E6F2C39B1BE7C14A003A54DB /* KeyboardButton.swift */,
 				E6F2C3931BE7AF59003A54DB /* Info.plist */,
 			);
 			path = PracticeKeyboard;
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F2C39C1BE7C14A003A54DB /* KeyboardButton.swift in Sources */,
 				E6F2C3921BE7AF59003A54DB /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

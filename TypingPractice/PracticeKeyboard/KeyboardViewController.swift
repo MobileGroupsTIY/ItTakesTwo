@@ -8,50 +8,14 @@
 
 import UIKit
 
-protocol EmojiRepresentable {
-    func toEmoji(phrase: Phrase) -> [Character]
-}
-struct Phrase: EmojiRepresentable {
-    
-    var allEmoji = ["💰", "🌳", "🚫"]
-    var words = [String]()
-     func wordToEmoji(s: String) -> Bool {
-        if allEmoji.contains(s) { return true } else {
-            return false
-        }
-    }
-}
-
-
-//    func toEmoji(phrase: Phrase) -> [Character] {
-//        words.filter{ self.wordToEmoji($0) }
-//    }
-    
-
-
-
 class KeyboardViewController: UIInputViewController {
 
     @IBAction func touchedEmoji(button: UIButton) {
         
         guard let text = button.titleLabel?.text else { return }
         
-        switch text {
-        case "💰": textDocumentProxy.insertText("Money doesn’t grow on trees.")
-        case "🚫", "🌳" : textDocumentProxy.insertText("Money doesn’t grow on trees.")
-        case "❌⏰🐣": textDocumentProxy.insertText("Don’t count your chickens before they hatch.")
-        case "📞📅": textDocumentProxy.insertText( "Call it a day")
-        case  "▶️🔥":textDocumentProxy.insertText("Play with fire.")
-        case  "👫🚤": textDocumentProxy.insertText("We’re all in the same boat")
-        case "❌🏠": textDocumentProxy.insertText("There’s no place like home.")
-        case "✋🐴": textDocumentProxy.insertText("Hold your horses.")
-        case "🙈🙉🙊": textDocumentProxy.insertText( "See no evil; hear no evil; speak no evil.")
-            
-        default : print("Blah")
-            
-        }
-        
-        
+        textDocumentProxy.insertText(Emoji(char: text).description)
+
     }
     
     
@@ -108,3 +72,50 @@ class KeyboardViewController: UIInputViewController {
     }
 
 }
+
+struct Emoji {
+    var char: String
+    var description: String {
+        
+        switch self.char {
+        case "💰": return "Money"
+        case "❌" : return "Don't"
+        case "🌳": return "Tree"
+        case "⏰": return "Time"
+        case "🐣": return "Hatch"
+        case "📞": return "Call"
+        case "📅": return "Money"
+        case "▶️": return "Play"
+        case "🔥": return "Fire"
+        case "👫": return "Together"
+        case "🚤": return "Boat"
+        case "🚫": return "No"
+        case "🏠": return "Home"
+        case "✋": return "Hold"
+        case "🐴": return "Horse"
+        case "🙈": return "See No Evil"
+        case "🙉": return "Hear No Evil"
+        case "🙊": return "Speak No Evil"
+        default: return ""
+            
+        }
+        
+    }
+    
+ 
+    private let hints = ["Money Don't Tree", "Don't Time Hatch", "Call Day", "Play Fire", "Together Boat", "No Home", "Hold Horse", "See No Evil. Hear No Evil, Speak No Evil"]
+    
+    private let emojiPhrases = [
+        "💰❌🌳" : "Money doesn’t grow on trees.",
+        "❌⏰🐣":"Don’t count your chickens before they hatch.",
+        "📞📅":"Call it a day",
+        "▶️🔥":"Play with fire.",
+        "👫🚤": "We’re all in the same boat",
+        "🚫🏠": "There’s no place like home.",
+        "✋🐴": "Hold your horses.",
+        "🙈🙉🙊": "See no evil; hear no evil; speak no evil."]
+    
+}
+
+
+

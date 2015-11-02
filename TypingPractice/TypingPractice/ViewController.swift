@@ -10,15 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    let emojiPhrases = [
-        "💰🚫🌳" : "Money doesn’t grow on trees.",
-        "❌⏰🐣":"Don’t count your chickens before they hatch.",
-        "📞📅":"Call it a day",
-        "▶️🔥":"Play with fire.",
-       "👫🚤": "We’re all in the same boat",
-       "❌🏠": "There’s no place like home.",
-       "✋🐴": "Hold your horses.",
-       "🙈🙉🙊": "See no evil; hear no evil; speak no evil."]
+    
+    var emojis = [Emoji]()
 
     @IBOutlet weak var practiceTextField: UITextField!
     @IBOutlet weak var practiceLabel: UILabel!
@@ -70,8 +63,51 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
+}
+struct Emoji {
+    var char: String
+    var description: String {
+        
+        switch self.char {
+        case "💰": return "Money"
+        case "❌" : return "Don't"
+        case "🌳": return "Tree"
+        case "⏰": return "Time"
+        case "🐣": return "Hatch"
+        case "📞": return "Call"
+        case "📅": return "Money"
+        case "▶️": return "Play"
+        case "🔥": return "Fire"
+        case "👫": return "Together"
+        case "🚤": return "Boat"
+        case "🚫": return "No"
+        case "🏠": return "Home"
+        case "✋": return "Hold"
+        case "🐴": return "Horse"
+        case "🙈": return "See No Evil"
+        case "🙉": return "Hear No Evil"
+        case "🙊": return "Speak No Evil"
+        default: return ""
+            
+        }
+        
+    }
     
-
+    
+  static let hints = ["Money Don't Tree", "Don't Time Hatch", "Call Day", "Play Fire", "Together Boat", "No Home", "Hold Horse", "See No Evil. Hear No Evil, Speak No Evil"]
+  
+    
+   static let phrases =  [
+        (chars: "💰❌🌳", def: "Money doesn’t grow on trees."),
+        (chars:"❌⏰🐣", def: "Don’t count your chickens before they hatch."),
+        (chars: "📞📅", def: "Call it a day"),
+        (chars: "▶️🔥", def: "Play with fire."),
+        (chars: "👫🚤", def: "We’re all in the same boat"),
+        (chars: "🚫🏠", def: "There’s no place like home."),
+        (chars: "✋🐴", def: "Hold your horses."),
+        (chars:"🙈🙉🙊", def: "See no evil; hear no evil; speak no evil.")
+    ]
+    
 }
 
 

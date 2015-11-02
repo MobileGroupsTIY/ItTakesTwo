@@ -14,6 +14,7 @@
 		A919315B1BE7ACDC009423E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91931591BE7ACDC009423E0 /* LaunchScreen.storyboard */; };
 		E6F2C3921BE7AF59003A54DB /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */; };
 		E6F2C3961BE7AF59003A54DB /* PracticeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6F2C3A01BE7C865003A54DB /* Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F2C39F1BE7C865003A54DB /* Mac.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E6F2C38F1BE7AF59003A54DB /* PracticeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PracticeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6F2C3911BE7AF59003A54DB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		E6F2C3931BE7AF59003A54DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F2C39F1BE7C865003A54DB /* Mac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mac.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				A91931501BE7ACDC009423E0 /* AppDelegate.swift */,
 				A91931521BE7ACDC009423E0 /* ViewController.swift */,
+				E6F2C39F1BE7C865003A54DB /* Mac.swift */,
 				A91931541BE7ACDC009423E0 /* Main.storyboard */,
 				A91931571BE7ACDC009423E0 /* Assets.xcassets */,
 				A91931591BE7ACDC009423E0 /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91931531BE7ACDC009423E0 /* ViewController.swift in Sources */,
+				E6F2C3A01BE7C865003A54DB /* Mac.swift in Sources */,
 				A91931511BE7ACDC009423E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +416,7 @@
 				E6F2C3981BE7AF59003A54DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
